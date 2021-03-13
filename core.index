@@ -9,6 +9,8 @@
 		</update>
 	</info>
 	<files>
+
+
 		<file name="internal.xml" url="https://raw.githubusercontent.com/DMZimo/elements/master/core/internal.xml" />
 
 		<file name="dungeon-masters-guide.index" url="https://raw.githubusercontent.com/DMZimo/elements/master/core/dungeon-masters-guide.index" />
