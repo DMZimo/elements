@@ -33,6 +33,7 @@
 			<grant type="Racial Trait" id="ID_ZIMO_NMDS_RACIAL_TRAIT_FORCED_TO_BOND" />
 		</rules>
 	</element>
+	
 
 	<element name="Street Runner" type="Racial Trait" source="Numidius" id="ID_ZIMO_NMDS_RACIAL_TRAIT_CITY_STREET_RUNNER">
 		<description>
