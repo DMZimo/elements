@@ -9,6 +9,15 @@
 		</update>
 	</info>
 	<files>
-		<file name="numidius.index" url="https://raw.githubusercontent.com/DMZimo/elements/master/numidius/numidius.index" />
+		<!-- <file name="numidius.index" url="https://raw.githubusercontent.com/DMZimo/elements/master/numidius/numidius.index" /> -->
+		<file name="companions.xml" url="https://raw.githubusercontent.com/DMZimo/elements/master/numidius/companions/companions.xml" />
+		<file name="feats.xml" url="https://raw.githubusercontent.com/DMZimo/elements/master/numidius/feats/feats.xml" />
+		<file name="minor-pacts.xml" url="https://raw.githubusercontent.com/DMZimo/elements/master/numidius/feats/minor-pacts.xml" />
+		<file name="spells.xml" url="https://raw.githubusercontent.com/DMZimo/elements/master/numidius/spells/spells.xml" />
+		<file name="warlock-puppeteer.xml" url="https://raw.githubusercontent.com/DMZimo/elements/master/numidius/classes/warlock-puppeteer.xml" />
+		<file name="items-armor.xml" url="https://raw.githubusercontent.com/DMZimo/elements/master/numidius/items/items-armor.xml" />
+		<file name="items-weapons.xml" url="https://raw.githubusercontent.com/DMZimo/elements/master/numidius/items/items-weapons.xml" />
+		<file name="items-wondrous.xml" url="https://raw.githubusercontent.com/DMZimo/elements/master/numidius/items/items-wondrous.xml" />
+		<file name="city-elf.xml" url="https://raw.githubusercontent.com/DMZimo/elements/master/numidius/races/city-elf.xml" />
 	</files>
 </index>
