@@ -5,7 +5,7 @@
     <description>Feats from the Numidius</description>
     <author url="https://www.worldanvil.com/w/edora-zimo">Numidius</author>
     <update version="0.0.1">
-      <file name="feat.xml" url="" />
+      <file name="feats.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/numidius/feats/feats.xml" />
     </update>
   </info>
 <!--

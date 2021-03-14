@@ -5,7 +5,7 @@
     <description>Weapons and arms from Numidius</description>
     <author url="https://www.worldanvil.com/w/edora-zimo">Numidius</author>
     <update version="0.0.1">
-      <file name="items-weapons.xml" url="" />
+      <file name="items-weapons.xml" url="https://raw.githubusercontent.com/DMZimo/elements/master/numidius/items/items-weapons.xml" />
     </update>
   </info>
 <!--
