@@ -9,6 +9,6 @@
 		</update>
 	</info>
 	<files>
-		<file name="source.xml" url="https://raw.githubusercontent.com/DMZimo/elements/master/numidius/source.xml" />
+		<file name="sources.xml" url="https://raw.githubusercontent.com/DMZimo/elements/master/numidius/sources.xml" />
 	</files>
 </index>

@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="0.1.1">
-			<file name="source.xml" url="https://raw.githubusercontent.com/DMZimo/elements/master/numidius/source.xml" />
+			<file name="sources.xml" url="https://raw.githubusercontent.com/DMZimo/elements/master/numidius/sources.xml" />
 		</update>
 	</info>
 	<element name="Numidius" type="Source" source="Core" id="ID_ZIMO_SOURCE_NUMIDIUS">
