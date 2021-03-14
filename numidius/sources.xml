@@ -26,4 +26,5 @@
 		<file name="warlock-puppeteer.xml" url="https://raw.githubusercontent.com/DMZimo/elements/master/numidius/items/items-weapons.xml" />
 		<file name="warlock-puppeteer.xml" url="https://raw.githubusercontent.com/DMZimo/elements/master/numidius/items/items-wondrous.xml" />
 		<file name="warlock-puppeteer.xml" url="https://raw.githubusercontent.com/DMZimo/elements/master/numidius/races/city-elf.xml" />
+	</files>
 </elements>
