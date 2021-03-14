@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>Spells</name>
+    <description>Weapons and arms from Numidius</description>
+    <author url="https://www.worldanvil.com/w/edora-zimo">Numidius</author>
+    <update version="0.0.1">
+      <file name="items-weapons.xml" url="" />
+    </update>
+  </info>
+<!--
+##################____INTRO READ THIS____#####################
+##															##	
+##															##	
+##		!!!!	THIS DOCUMENT CONTAINS SPOILERS	!!!!		##
+##															##
+##	This document house the Spells available in Numidius.  	##
+## 	It does NOT meen that items that exist here will show	##
+## 	up under the Spells Category.							##
+##															##
+##															##
+##############################################################
+-->
+
+
+<!--
+##############################
+##		WEAVE STRIKE		##
+##############################
+-->
+	<element name="Weave Strike" type="Spell" source="Numidius" id="ID_ZIMO_NUMIDIUS_SPELL_WEAVE_STRIKE">
+		<supports>ID_ZIMO_NUMIDIUS_MAGIC_WEAPON_WHISPER</supports>
+		<description>
+		<p>While attuned to Whisper, the user can throw the blade at a target. When the blade is thrown, but before any attack roll is made, the wielder can choose to merge themselves into the weave, following the blade and teleporting instantly wherever it hits. If the target is a creature, the wielder emerges in a space of their choice adjacent to the target. If the wielder miss the attack roll, the DM determines where the wielder teleports accordingly. This ability can be used 2 + {{proficiency}} times before needing a short rest.</p> 
+		</description>
+		<sheet action="Bonus Action" usage="1/Long Rest">
+    		<description>While attuned to Whisper, the user can throw the blade at a target. When the blade is thrown, but before any attack roll is made, the wielder can choose to merge themselves into the weave, following the blade and teleporting instantly wherever it hits. If the target is a creature, the wielder emerges in a space of their choice adjacent to the target. If the wielder miss the attack roll, the DM determines where the wielder teleports accordingly. This ability can be used 2 + {{proficiency}} times before needing a short rest.</description>
+		</sheet>
+		<setters>
+		<set name="keywords">psychic</set>
+		<set name="level">0</set>
+		<set name="school">Evocation</set>
+		<set name="time">1 action</set>
+		<set name="duration">Instantaneous</set>
+		<set name="range">120 feet</set>
+		<set name="hasVerbalComponent">true</set>
+		<set name="hasSomaticComponent">true</set>
+		<set name="hasMaterialComponent">false</set>
+		<set name="materialComponent" />
+		<set name="isConcentration">false</set>
+		<set name="isRitual">false</set>
+		</setters>
+		<compendium display="false" />
+	</element>
+<!--
+##########################
+##		EARTH SIGHT		##
+##########################
+-->
+	<element name="Earth Sight" type="Spell" source="Numidius" id="ID_ZIMO_NUMIDIUS_SPELL_EARTH_SIGHT">
+		<supports>Druid, Sorcerer, Wizard</supports>
+		<description>
+			<p>For the duration of the spell you gain Tremoresense up to 60 feet. You can pinpoint the source of any vibrations as long as they are on contact with the same surface as you.</p> 
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">2</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 hour</set>
+			<set name="range">self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">A clump of mole's fur</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+<!--
+##############################
+##		PIERCING GAZE		##
+##############################
+-->
+	<element name="Piercing Gaze" type="Spell" source="Numidius" id="ID_ZIMO_NUMIDIUS_SPELL_PIERCING_GAZE">
+		<supports>Artificer, Warlock, Wizard</supports>
+		<description>
+			<p>For the duration of the spell you can see through solid surface to a range of 30 feet. You percieve objects as ghostly, transparant images. This spell is blocked by a thin sheet of lead.</p> 
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">4</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">Powdered quartz worth at least 50gp.</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+<!--
+##############################
+##		UNSTABLE FROST		##
+##############################
+-->
+	<element name="Unstable Frost" type="Spell" source="Numidius" id="ID_ZIMO_NUMIDIUS_SPELL_UNSTABLE_FROST">
+		<supports>Sorcerer, Wizard</supports>
+		<description>
+			<p>You cast a ray of frost aimed at a target withing 60ft of you. Make a Spell Attack. On hit the target takes 1d10 Cold Damage and must succeed a Strenght saving throw Against your spell Save DC or be grappled by tendrils of ice until the end of your next turn. If you cast this spell at a target already grappled by this spell and hit, it is considered a critical hit and the ice restraining the target shatters, freeing them. </p>
+				<p class="indent"><em><b>At Higher levels.</b></em> When you cast this spell using a spell slot of 2nd level or higher, the Cold Damage increases by 1d10 for each spell slot level above 1st.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"/>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+<!--
+######################
+##		ICEBERG		##
+######################
+-->
+	<element name="Iceberg Throw" type="Spell" source="Numidius" id="ID_ZIMO_NUMIDIUS_SPELL_ICEBERG_THROW">
+		<supports>Cleric, Druid, Sorcerer, Wizard</supports>
+		<description>
+			<p>You summon a block of ice that flies through the air at breakneck speed towards a target. Make a Spell Attack roll. On a hit the target takes  2d10 Bludgeoning Damage and 2d8 Cold Damage. All creatures within 15 ft. cone behind the target must make a Dexterity saving throw or take 4d4 cold damage on failure, as the bock shatters on impact.</p>
+				<p class="indent"><em><b>At Higher levels.</b></em> When you cast this spell using a spell slot of 4nd level or higher, the Bludgeoning Damage increases by 1d10 and the Cold Damage increases by 2d4 for each spell slot level above 3rd.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">3</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">An ice cube.</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+<!--
+##########################
+##		STALAGMITE		##
+##########################
+-->
+	<element name="Stalagmite" type="Spell" source="Numidius" id="ID_ZIMO_NUMIDIUS_SPELL_STALAGMITE">
+		<supports>Druid, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>Spikes of ice emerge from the ground in a point within range. All creatures withing a 15 ft radious must make a Dexterity Saving Throw A creature that fails the save takes 3d6 Cold Damage and 2d6 Piercing Damage and is Restrained as the stalagmite impales it. On a success the creature takes half the damage nad isn't Restrained.</p>
+			<p>A restrained creature can repeat the save at the start of each of its turns, ending the effect on success, or taking an additional 2d6 piercing damage on a failure.</p>
+				<p class="indent"><em><b>At Higher levels.</b></em> When you cast this spell using a spell slot of 5nd level or higher, the radius increases by 5 ft for each spell slot level above 3rd.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">4</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">90 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">A shard of Everlasting Ice worth at least 500gp.</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+<!--
+##########################
+##		ICE BLOCK		##
+##########################
+-->
+	<element name="Ice Block" type="Spell" source="Numidius" id="ID_ZIMO_NUMIDIUS_SPELL_ICE_BLOCK">
+		<supports>Druid, Wizard</supports>
+		<description>
+			<p>You encase yourself or an ally in ice, they gain immunity to all physycal damage, but are incapacitated. The ice melts at the end of your next turn.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">5</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 reaction, when you or an ally take damage that would reduce them to 0hp or lower but not kill them outright.</set>
+			<set name="duration">1 turn</set>
+			<set name="range">30 ft</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"/>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+<!--
+##############################
+##		SUMMON WHALE		##
+##############################
+-->
+	<element name="Summon Whale" type="Spell" source="Numidius" id="ID_ZIMO_NUMIDIUS_SPELL_SUMMON_WHALE">
+		<supports>Druid, Wizard, Sorcerer</supports>
+		<description>
+			<p>You summon a giant whale from the plane of water to a point you can see above the ground and up to 1 mile away. The creature floats in the air for a moment, then start to fall, crushing everything below it. All creatures whitin a 50 foot cube make a DC 20 Dextirity saving throw. Creatures that failed their save take 20d8+40 Bludgeoning Damage, knocked prone and lose all cocentration on spells. On successful save, the creature takes half damage, is knocked prone and makes a Concentration check. Immediately after the whale hits the surface it's corpse is teleported back to the Plane of Water. Any creature who's HP are reduced to 0 by the whale is crushed to death.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">8</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 Action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">1 mile</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a large Golden Fish Idol worth at least 500gp, which the spell consumes.</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!--
+##############################
+##		DREAD AUGURIUM		##
+##############################
+-->
+	<element name="Dread Augurium" type="Spell" source="Numidius" id="ID_ZIMO_NUMIDIUS_SPELL_DREAD_AUGURIUM">
+		<supports>Warlock, Wizard, Sorcerer</supports>
+		<description>
+			<p>You manipulate the temporal perception of one creature whitin range, assulting their mind with alternate timelines and events. The target must make a Wisdom saving throw against you Spell Save DC. On a failed save, the creature takes 3d12 Psychic Damage and becomes frightend by a target of your choosing until your next turn. On a successful save the creature takes half damage.</p>
+			<p class="indent"><em>On Higher Levels:</em> When you cast this spell using a 4th level spell slot or higher the damage increases by 1d12 for each spell slot above 3rd level.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">3</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 Action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">120 feet</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">a copper pieace.</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+<!--
+##############################
+##		OPPSING FORCE		##
+##############################
+-->
+	<element name="Opposing Force" type="Spell" source="Numidius" id="ID_ZIMO_NUMIDIUS_SPELL_DREAD_AUGURIUM">
+		<supports>Warlock, Wizard, Sorcerer</supports>
+		<description>
+			<p>You revert some (or all) of the force from a magical attack that was made against you back to the caster. Roll 1d10 + your Spell Attack Bonus. You reduce the amount of incoming damage by the result, reflecting it back at the attacker who suffers the original spell's damage type and amount but not its effects.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">2</set>
+			<set name="school">Abjuration</set>
+			<set name="time">Rection</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"/>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+<!--
+##########################
+##		TRACE MAGIC		##
+##########################
+-->
+	<element name="Opposing Force" type="Spell" source="Numidius" id="ID_ZIMO_NUMIDIUS_SPELL_DREAD_AUGURIUM">
+		<supports>Warlock, Wizard, Sorcerer</supports>
+		<description>
+			<p>You focus in an area and detect any spells that have been cast in the area within the last 24 hours. If you sense any spells have been cast, you learn the exact location they where cast, their schools of magic and their used components. You may choose to target an object instead of an area, focusing your search. In addition to the above knownledge, you can exctract a unique fingerprint that may point to the identity of the caster.</p>
+			<p class="indent"><em>On Higher Levels:</em> When you cast this spell using a 4th level spell or above, you can identify spells cast within an additional 24 hours per spell slot. Casting this spell at 7th level allows you to trace spells casted up to 1 year ago.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">3</set>
+			<set name="school">Divination</set>
+			<set name="time">Action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent"/>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+<!--
+######################
+##		PLACEBO		##
+######################
+-->
+	<element name="Opposing Force" type="Spell" source="Numidius" id="ID_ZIMO_NUMIDIUS_SPELL_DREAD_AUGURIUM">
+		<supports>Bard, Cleric, Sorcerer, Warlock</supports>
+		<description>
+			<p>You touch a willing creature who has to make a wisdom save (Insight) of DC 8 + Your Charisma modifier. On a failed save, the creature belives it feels better and that they gained hitpoints equal to your proficiency modifer. If the creature is in pain, they are soothed for the duration of this spell.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Illusion</set>
+			<set name="time">Action</set>
+			<set name="duration">5 minutes, or until the caster is out of sight.</set>
+			<set name="range">Touch</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"/>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+<!--
+##########################
+##		STARLIGHT		##
+##########################
+-->
+	<element name="Starlight" type="Spell" source="Numidius" id="ID_ZIMO_NUMIDIUS_SPELL_STARLIGHT">
+		<supports>Druid, Ranger</supports>
+		<description>
+			<p>You speak aloud the name of a location you have seen or visited before. If you can see the night sky, and the location is on the same plane of existence as you, glowing starlight only you can see appears in the sky as dots showing the direction from you to the location. Whenever you move for the duration of the spell, the starlight adjusts to the new direction.</p>
+			<p class="indent"><em>On Higher Levels:</em> When you cast this spell using a 3rd level spell or above, you can choose 1 additional creature per spell slot level withing 500 feet. The chosen creatures see the starlight as if they were the ones to cast the spell.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">2</set>
+			<set name="school">Divination</set>
+			<set name="time">Action</set>
+			<set name="duration">Up to 1 hour.</set>
+			<set name="range">Touch</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a pinch of powdered Moonstone</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+<!--
+##############################
+##		VENTRILOQUISM		##
+##############################
+-->
+	<element name="Ventriloquism" type="Spell" source="Numidius" id="ID_ZIMO_NUMIDIUS_SPELL_VENTRILOQUISM">
+		<supports>Bard, Sorcerer</supports>
+		<description>
+			<p>You speak aloud the name of a location you have seen or visited before. If you can see the night sky, and the location is on the same plane of existence as you, glowing starlight only you can see appears in the sky as dots showing the direction from you to the location. Whenever you move for the duration of the spell, the starlight adjusts to the new direction.</p>
+			<p class="indent"><em>On Higher Levels:</em> When you cast this spell using a 3rd level spell or above, you can choose 1 additional creature per spell slot level withing 500 feet. The chosen creatures see the starlight as if they were the ones to cast the spell.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">2</set>
+			<set name="school">Divination</set>
+			<set name="time">Action</set>
+			<set name="duration">Up to 1 hour.</set>
+			<set name="range">Touch</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a pinch of powdered Moonstone</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+</elements>

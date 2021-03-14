@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>Items - Weapons</name>
+    <description>Weapons and arms from Numidius</description>
+    <author url="https://www.worldanvil.com/w/edora-zimo">Numidius</author>
+    <update version="0.0.1">
+      <file name="items-weapons.xml" url="" />
+    </update>
+  </info>
+<!--
+##################
+##	TEMPLATE	##
+##################
+-->
+
+<!--
+    <element name="Cestus" type="Weapon" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WEAPON_CESTUS">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING,ID_INTERNAL_WEAPON_PROPERTY_LIGHT,ID_INTERNAL_WEAPON_GROUP_KNUCKLES</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="bludgeoning">0d0</set>
+            <set name="proficiency">ID_NV_FLDS_PROFICIENCY_WEAPON_PROFICIENCY_CESTUS</set>
+        </setters>
+    </element>
+
+-->
+
+<!--
+##################____INTRO READ THIS____#####################
+##															##
+##	This document house the Magical Items of Numidius.   	##
+## 	It does NOT meen that items that exist here will show	##
+## 	up under the Magic Item Category.						##
+##															##
+##############################################################
+-->
+
+<!--
+###################
+##    WHISPER    ##
+###################
+-->
+	<element name="Whisper" type="Weapon" source="Numidius" id="ID_ZIMO_NUMIDIUS_MAGIC_WEAPON_WHISPER">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_THROWN,ID_INTERNAL_DAMAGE_TYPE_PSYCHIC</supports>
+		<description>
+			<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon.
+			This bonus increases to +2 on 6th level and +3 on 14th level.</p>
+			<p>Whisper is a mythical dagger used as a symbolic artifact to be wielded by The Hand, an envoy of the Master of Lore of the College of Whispers. The dagger, and its various wielders, are rumored to be behind many assassinations, murders, rituals and other dark deeds thought history.</p>
+			
+			<p class="indent"><em><b>Mind Rend.</b></em> Whenever a creature is struck with a critical hit from Whisper, the blade renders into its targets mind, projecting unspeakable horrors and disfiguring their surroundings. the target must make a DC 12 Wisdom saving throw or become frightened from every creature around it. On a success, they are immune to being frightened by this effect for the next 24 hours.</p>
+
+			<p class="indent"><em><b>Weave Strike.</b></em> While attuned to Whisper, the user can throw the blade at a target. When the blade is thrown, but before any attack roll is made, the wielder can choose to merge themselves into the weave, following the blade and teleporting instantly wherever it hits. If the target is a creature, the wielder emerges in a space of their choice adjacent to the target. If the wielder miss the attack roll, the DM determines where the wielder teleports accordingly. This ability can be used 2 + 1 times per proficiency level before needing a short rest.</p>
+		</description>
+		<sheet>
+		</sheet>
+		<setters>
+			<set name="category">Magic Weapons</set>
+            <set name="weight" lb="1">1 lb.</set>
+			<set name="rarity">Legendary</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="psychic">1d4</set>
+			<set name="attunement" addition="by a bard or a rogue.">true</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS</set>
+        </setters>
+        <rules>
+			<select type="Spell" name="Weave Strike" supports="ID_ZIMO_NUMIDIUS_SPELL_WEAVE_STRIKE"/>
+			<grant type="Spell" id="ID_ZIMO_NUMIDIUS_SPELL_WEAVE_STRIKE" requirements="ID_ZIMO_NUMIDIUS_MAGIC_WEAPON_WHISPER"/>
+		</rules>
+	</element>
+<!--
+######################
+##    DEATH KISS    ##
+######################
+-->
+	<element name="Death Kiss" type="Magic Item" source="Numidius" id="ID_ZIMO_NUMIDIUS_MAGIC_DEATH_KISS">
+		<supports>rogue, bard</supports>
+		<description>
+			<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+
+			<p>Whisper is a mythical dagger used as a symbolic artifact to be wielded by the hand of the Master of Lore of the College of Whispers. The dagger, and its various wielders, are rumored to be behind many assassinations, murders, rituals and other dark deeds thought history.</p>
+			
+			<p class="indent"><em><b>Relentless Wound.</b></em> Hit points lost to attacks made with this weapon can be regained only by taking a long rest.</p>
+
+			<p class="indent"><em><b>Blood Drinker.</b></em> When you hit a creature with an attack using this magical dagger the target must make a DC 15 Constitution Saving Throw. On a failed save the target takes 2d6 Necrotic Damage and the user gains half as many hit point.</p>
+		</description>
+		<sheet>
+		
+		</sheet>
+		<setters>
+			<set name="keywords">dagger</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp"></set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="type" addition="dagger">Weapon</set>
+			<set name="rarity">Very Rare</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Dagger</set>
+            <set name="slot">onehand</set>
+			<set name="attunement" addition="by a bard or a rogue.">true</set>
+		</setters>
+	</element>
+	
+<!--
+############################
+##    THE SIXTH FINGER    ##
+############################
+-->
+	<element name="The Sixth Finger" type="Magic Item" source="Numidius" id="ID_ZIMO_NUMIDIUS_MAGIC_ITEM_THE_SIXTH_FINGER">
+		<supports>ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
+		<description>
+			<p>You gain a +2 bonus to attack and damage rolls made with this magic weapon.</p>
+
+			<p>A brass colored glove wraped in a chain whos end is connected to a glimerring and very sharp crystal shard.</p>
+			<p>The user can spend an action to cause thick, black, wyvern poison to coat the crystal. The weapon remains coated in poison for 1 minute or until an attack with this weapon hits another creature.</p>
+
+			<p class="indent"><em><b>Finishing Touch.</b></em> A creature that is hit by the crystal must succed on an DC 15 Constitution Saving Throw or take 7d6 poison damage, half as much on a successful save, and becomes poisoned for 1 minute. The dart can't be used this way again.</p>
+
+			<p class="indent"><em><b>Pulling Touch.</b></em> Additionaly, when you hit a creature, you can use a bonus action to pull it. The creature must suceed on a DC 10+ {{strength:modifier}} on be pulled up to 10 feer in a straight line toward you.</p>
+		</description>
+		<sheet>
+		
+		</sheet>
+		<setters>
+			<set name="keywords">dagger</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp"></set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="type" addition="dagger">Weapon</set>
+			<set name="rarity">Very Rare</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">Dagger</set>
+            <set name="slot">onehand</set>
+			<set name="attunement" addition="by a bard or a rogue.">true</set>
+		</setters>
+	</element>
+<!--
+######################################
+##	SWORD OF THE UMBRAL AMBASADOR	##
+######################################
+-->
+    <element name="Sword of the Umbral Ambasador" type="Magic Item" source="Numidius" id="ID_ZIMO_NUMIDIUS_MAGIC_ITEM_SWORD_OF_THE_UMBRAL_AMBASADOR">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING,ID_INTERNAL_WEAPON_PROPERTY_LIGHT,ID_INTERNAL_WEAPON_GROUP_KNUCKLES</supports>
+        <description>
+        	<p>You gain a +2 bonus to attack and damage rolls made with this magic weapon. Additionaly, attacks with this shortsword deal an extra 1d6 psychic damage.</p>
+            <p>This black iron sword was forged in the black flames of the Shadofell and held by generations of Shadar-kai kithlords, the leaders of their societies. The sword imbued with powers that reflect the strongest abilites of the Shadar-Kai, in the name of the Raven Queen.
+		        <p class="indent">This sword has a maximuum of 9 charges, You can spend 1 charge to cast <em>mirror image, misty step,</em> or <em>invisibility.</em> You can use 2 charges to cast <em>Blink</em> or <em>Greater Invisibility.</em> The sword regains 1d8+1 charges at dawn.</p>
+			</p>
+            <p class="indent"><em><b>Shadow Grip.</b></em> The sword of the Umbral Abasador draw power from the Shadowfell in order to manipulate an enemy's own shadow, turning it against them. As an action you can spen 3 charges to force an enemy within 60 feet to make a DC 16 Strenght Saving Throw or be Paralized by tendrils of shadow. At the end of each of their turns, the target may repeat the saving throw, ending the effect of success.</p>
+        </description>
+        <setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="shortsword">Weapon</set>
+			<set name="rarity">Rare</set>
+            <set name="weight" lb="4">4 lb.</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">Shortsword</set>
+			<set name="damage" type="slashing">+1d6 psychic</set>
+            <set name="slot">onehand</set>			
+			<set name="attunement" addition="by a lawful evil creature">true</set>
+        </setters>
+    </element>
+<!--
+######################################
+##	THE WREN AND THE NIGHTINGALE	##
+######################################
+-->
+	<element name="The Wren" type="Magic Item" source="Numidius" id="ID_ZIMO_NUMIDIUS_MAGIC_ITEM_THE_WREN">
+		<supports>ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_ZIMO_NUMIDIUS_MAGIC_ITEM_THE_NIGHTINGALE</supports>
+		<description>
+			<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon. When both The Wren and The Nightnigale are equiped the the bonus is +2.</p>
+
+			<p>A well made silver dwarven dagger. The bright blue gem embeded on its guard pulses gently</p>
+
+			<p class="indent"><em><b>Ethereal Connection.</b></em> The Wren always knows the location of The Nightingale.</p>
+		</description>
+		<sheet>
+		</sheet>
+		<setters>
+			<set name="keywords">dagger</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp"></set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="type" addition="dagger">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Dagger</set>
+            <set name="slot">onehand</set>
+			<set name="attunement">true</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS</set>
+		</setters>
+	</element>
+
+	<element name="The Nightingale" type="Magic Item" source="Numidius" id="ID_ZIMO_NUMIDIUS_MAGIC_ITEM_THE_NIGHTINGALE">
+		<supports>ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_ZIMO_NUMIDIUS_MAGIC_ITEM_THE_WREN</supports>
+		<description>
+			<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon. When both The Nightingale and The Wren are equiped the bonus is +2.</p>
+
+			<p>A well made silver dwarven dagger. The bright pink gem embeded on its guard pulses gently</p>
+
+			<p class="indent"><em><b>Ethereal Connection.</b></em> The Nightingale always knows the location of The Wren.</p>
+		</description>
+		<sheet>
+		</sheet>
+		<setters>
+			<set name="keywords">dagger</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp"></set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="type" addition="dagger">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Dagger</set>
+            <set name="slot">onehand</set>
+			<set name="attunement">true</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS</set>
+		</setters>
+	</element>
+<!--
+######################################
+##		JUSTICIAR'S LONGSWORD		##
+######################################
+-->
+	<element name="Justiciar's Longsword" type="Weapon" source="Numidius" id="ID_ZIMO_NUMIDIUS_JUSTICIARS_LONGSWORD">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
+		<description>
+			<p>You have a +1 bonus to attack and damage rolls made with this superb weapon.</p>
+			<p>
+				A fancy sword awarded by The Justiciar Order to members who finish their training. The hilt is made from solid gold with two rubies embedded on each side of the wrist guard. Despite it's weight, the sword is extremely well balanced. The blade itself is well forged, keeping its sharp edge for a long time.
+			</p>
+			<p class="indent">
+				<em><b>Perfect Balance.</b></em> While wielding the sword the wielder gains advantage to Disarming Saving Throws against them.
+			</p>
+			<p class="indent">
+				<em><b>In Times of Need.</b></em> The sword has 4 cheap rubies, worth 250gp each. You can spend an hour removing a ruby from the hilt.
+			</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">15</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="slashing">1d8</set>
+			<set name="versatile">1d10</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD</set>
+		</setters>
+	</element>
+<!--
+##########################
+##		DOCUMENT END 	##
+##########################
+-->
+</elements>

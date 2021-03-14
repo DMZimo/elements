@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Companions</name>
+		<description>Companion creatures from the Player’s Handbook.</description>
+		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
+		<update version="0.0.3">
+			<file name="companions.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/core/players-handbook/companions.xml" />
+		</update>
+	</info>
+
+    <element name="Voodo Doll" type="Companion" source="Player’s Handbook" id="ID_ZIMO_NUMIDIUS_COMPANION_VOODO_DOLL">
+		<supports>Familiar</supports>
+		<description />
+		<setters>
+			<set name="strength">15</set>
+			<set name="dexterity">6</set>
+			<set name="constitution">18</set>
+			<set name="intelligence">10</set>
+			<set name="wisdom">10</set>
+			<set name="charisma">8</set>
+			<set name="ac">8</set>
+			<set name="hp">19 (3d4+12)</set>
+			<set name="speed">25 ft.</set>
+			<set name="languages">Undersands the languages of its creator but can't speak.</set>
+			<set name="skills">Passive Perception 10</set>
+			<set name="type">Construct</set>
+			<set name="size">Tiny</set>
+			<set name="alignment">unaligned</set>
+			<set name="challenge">1/4</set>
+			<set name="traits">ID_ZIMO_NUMIDIUS_COMPANION_TRAIT_VOODO_DOLL_MAGIC_RESISTANCE</set>
+			<set name="actions">ID_ZIMO_NUMIDIUS_COMPANION_ACTION_VOODOO_DOLL_SCRATCH, ID_ZIMO_NUMIDIUS_COMPANION_ACTION_VOODOO_DOLL_REDIRECT</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="8" />
+			<stat name="companion:hp:max" value="19" bonus="base" />
+			<stat name="companion:speed" value="25" bonus="base" />
+			<stat name="companion:perception:passive" value="companion:perception:passive" bonus="base" />
+		</rules>s
+	</element>
+	<element name="Magic Resistance" type="Companion Trait" source="Numidius" id="ID_ZIMO_NUMIDIUS_COMPANION_TRAIT_VOODO_DOLL_MAGIC_RESISTANCE">
+		<description>
+			<p>The voodoo doll has advantage on saving throws against spells and other magical effects.</p>
+		</description>
+		<sheet>
+			<description>The voodoo doll has advantage on saving throws against spells and other magical effects.</description>
+		</sheet>
+	</element>
+	<element name="Scratch" type="Companion Action" source="Numidius" id="ID_ZIMO_NUMIDIUS_COMPANION_ACTION_VOODOO_DOLL_SCRATCH">
+		<description>
+			<p>Melee Weapon Attack: +4 to hit, reach 5ft., one target. Hit 3 (1d6 + 2).</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +4 to hit, reach 5ft., one target. Hit 3 (1d6 + 2).</description>
+		</sheet>
+	</element>
+	<element name="Redirect (Recharge 6)" type="Companion Action" source="Numidius" id="ID_ZIMO_NUMIDIUS_COMPANION_ACTION_VOODOO_DOLL_REDIRECT">
+		<description>
+			<p><em> Reaction.</em> The voodoo doll can redirect half the damage it would take from an attack towards another creature within 10ft. of it.</p>
+		</description>
+		<sheet>
+			<description><em> Reaction.</em> The voodoo doll can redirect half the damage it would take from an attack towards another creature within 10ft. of it.</description>
+		</sheet>
+	</element>
+
+<!--
+##############################################
+##											##	
+##			DO NOT ADD ANYTHIG BELOW    	##
+##			        THIS PART       		##
+##											##
+##############################################
+-->
+</elements>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>Minor Pacts</name>
+    <description>Minor Pacts from the Numidius</description>
+    <author url="https://www.worldanvil.com/w/edora-zimo">Numidius</author>
+    <update version="0.0.1">
+      <file name="feat.xml" url="" />
+    </update>
+  </info>
+<!--
+##################____INTRO READ THIS____#####################
+##															##	
+##															##	
+##		!!!!	THIS DOCUMENT CONTAINS SPOILERS	!!!!		##
+##															##
+##	This document house the Feats available in Numidius.   	##
+## 	It does NOT meen that items that exist here will show	##
+## 	up under the Feats Category.							##
+##															##
+##															##
+##############################################################
+-->
+
+
+<!--
+##############################################
+##											##	
+##											##	
+##				 MINOR PACTS				##
+##											##
+##											##
+##############################################
+-->
+<!--
+##########################
+##		MINOR PACT		##
+##########################
+-->
+	<element name="Minor Pact" type="Feat" source="Numidius" id="ID_ZIMO_NUMIDIUS_FEAT_MINOR_PACT">
+		<prerequisite>No prior levels in Warlock</prerequisite>
+		<description>
+			<p>You have made a deal with an otherworldy Patron. For a small favor on your part, you gain a small gift of their power:</p>
+			<ul>
+				<li>You gain 1 cantrip from the Warlock spell list.</li>
+				<li>You gain 1 invocation.</li>
+			</ul>
+            <p>Each time you level up you may change cantrip and invocation.</p>
+		</description>
+		<sheet display="false">
+			<description>You have made a deal with an otherwirldy Patron. For a small favor on your part, you gain a small gift of their powers.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_SOLO" />
+            <select type="Spell" name="Cantrip (Warlock)" supports="ID_PHB_SPELL_BLADE_WARD|ID_SCAG_SPELL_BOOMING_BLADE|ID_PHB_SPELL_CHILL_TOUCH|ID_XGTE_SPELL_CREATE_BONFIRE|ID_PHB_SPELL_ELDRITCH_BLAST|ID_PHB_SPELL_FRIENDS|ID_KBP_DMEM_SPELL_FROSTBITE|ID_SCAG_SPELL_GREEN_FLAME_BLADE|ID_XGTE_SPELL_INFESTATION|ID_SCAG_SPELL_LIGHTNING_LURE|ID_PHB_SPELL_MAGE_HAND|ID_XGTE_SPELL_MAGIC_STONE|ID_PHB_SPELL_MINOR_ILLUSION|ID_PHB_SPELL_POISON_SPRAY|ID_PHB_SPELL_PRESTIDIGITATION|ID_SCAG_SPELL_SWORD_BURST|ID_XGTE_SPELL_THUNDERCLAP|ID_XGTE_SPELL_TOLL_THE_DEAD|ID_PHB_SPELL_TRUE_STRIKE" level="1" number="1" spellcasting="Warlock" />
+            <select type="Class Feature" supports="ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_AGONIZING_BLAST|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_ARMOR_OF_SHADOWS|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_ASCENDANT_STEP|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_BEAST_SPEECH|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_BEGUILING_INFLUENCE|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_BEWITCHING_WHISPERS|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_BOOK_OF_ANCIENT_SECRETS|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_CHAINS_OF_CARCERI|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_DEVILS_SIGHT|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_DREADFUL_WORD|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_ELDRITCH_SIGHT|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_Eldritch_Spear|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_EYES_OF_THE_RUNEKEEPER|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_FIENDISH_VIGOR|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_GAZE_OF_TWO_MINDS|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_LIFEDRINKER|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_MASK_OF_MANY_FACES|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_MASTER_OF_MYRIAD_FORMS|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_MINIONS_OF_CHAOS|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_MIRE_THE_MIND|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_MISTY_VISIONS|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_ONE_WITH_SHADOWS|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_OTHERWORLDLY_LEAP|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_REPELLING_BLAST|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_SCULPTOR_OF_FLESH|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_SIGN_OF_ILL_OMEN|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_THIEF_OF_FIVE_FATES|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_THIRSTING_BLADE|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_VISIONS_OF_DISTANT_REALMS|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_VOICE_OF_THE_CHAIN_MASTER|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_WHISPERS_OF_THE_GRAVE|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_WITCH_SIGHT" number="1"/>
+		</rules>
+	</element>
+
+<!--
+##########################
+##		MINOR PACT		##
+##########################
+##THIS NEEDS TO BE ADDED AS A FEATURE.
+IMPLEMENT WITH BLOOD HUNTERS
+
+Lesser Pacts
+
+Sometimes to destroy one evil, we must ally ourselves with another. Such is the way of Blood Hunters that have taken to the Order of the Profane Soul. Should a Blood Hunter walk this path, they may chose to form a pact with the Puppeteer. If they do, they gain the following.
+
+Rite Focus
+The Puppeteer. If you use the Blood Curse of the Fallen Puppet, you can use that blood curse again on the same creature as a bonus action on your next turn without expending a use of your Blood Maledict.
+
+Revealed Arcana
+The Puppeteer. You can cast ventriloquism once using a pact spell slot. You can't do so again until you finish a long rest.
+
+Unsealed Arcana
+The Puppeteer. You can cast animate dead once using a pact spell slot. You can't do so again until you finish a long rest.
+
+-->
+
+<!--
+##############################################
+##											##	
+##			DO NOT ADD ANYTHIG BELOW    	##
+##			        THIS PART       		##
+##											##
+##############################################
+-->
+</elements>

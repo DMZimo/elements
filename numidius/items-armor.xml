@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>Items-Armors</name>
+    <description>Armors from the Numidius</description>
+    <author url="https://www.worldanvil.com/w/edora-zimo">Numidius</author>
+    <update version="0.0.1">
+      <file name="items-armor.xml" url="" />
+    </update>
+  </info>
+
+<!--
+##########################
+##		BLAST BOX		##
+##########################
+-->
+<element name="Elf Lauren Merchant Attire" type="Magic Item" source="Numidius" id="ID_ZIMO_NUMIDIUS_MAGIC_ITEM_EL_MERCHANT_ATTIRE">
+		<description>
+			<p>An intricate leather armor sown into a fancy blue dress made by Elf Lauren.</p>
+			<p>Your AC increases by 1 while Wearing this dress and you gain +2 on Persuasion rolls. You also gain advantagge when dealing with Merchants and Tradesmen.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="slot">body</set>
+			<set name="type" addition="light">Armor</set>
+			<set name="rarity">Uncommon</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
+			<stat name="persuation" value="2" bonus="base" />
+		</rules>
+</element>
+</elements>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>The Schemer</name>
+    <description>The Schemer from Numidius</description>
+    <author url="https://www.worldanvil.com/w/edora-zimo">Numidius</author>
+    <update version="0.0.5">
+      <file name="warlock-puppeteer.xml" url="" />
+    </update>
+  </info>
+
+  <element name="The Puppeteer" type="Archetype" source="Numidius" id="ID_ZIMO_NUMIDIUS_ARCHETYPE_PUPPETEER">
+    <supports>Otherworldly Patron</supports>
+    <description>
+      <p>Your Patron is the puppeteer, an otherworldly entity with the power to easily bend the minds, bodies, and souls of mortals to fulfil their ambitions. Whether you chose this fate for yourself or were manipulated into it doesn't matter, all that does matter is that you play the role given to you.</p>
+      <div element="ID_ZIMO_NUMIDIUS_ARCHETYPE_FEATURE_PUPPETEER_EXPANDED_SPELL_LIST" />
+      <div element="ID_ZIMO_NUMIDIUS_ARCHETYPE_FEATURE_PUPPETEER_PUPPET_MASTERS_TOOLS" />
+      <div element="ID_ZIMO_NUMIDIUS_ARCHETYPE_FEATURE_PUPPETEER_STURDY_STRINGS" />
+      <div element="ID_ZIMO_NUMIDIUS_ARCHETYPE_FEATURE_PUPPETEER_MANUFACTURE_MARIONETTE"/>
+      <div element="ID_ZIMO_NUMIDIUS_ARCHETYPE_FEATURE_PUPPETEER_MANIKINS_MADNESS" />
+      <div element="ID_ZIMO_NUMIDIUS_ARCHETYPE_FEATURE_PUPPETEER_NECROVENTRILOQUISM" />
+      <div element="ID_ZIMO_NUMIDIUS_ARCHETYPE_FEATURE_PUPPETEER_PUPPET_MASTERY" />
+    </description>
+    <sheet>
+      <description>Your Patron is the puppeteer, an otherworldly entity with the power to easily bend the minds, bodies, and souls of mortals to fulfil their ambitions.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_ZIMO_NUMIDIUS_ARCHETYPE_FEATURE_PUPPETEER_EXPANDED_SPELL_LIST" level="1"/>
+      <grant type="Archetype Feature" id="ID_ZIMO_NUMIDIUS_ARCHETYPE_FEATURE_PUPPETEER_PUPPET_MASTERS_TOOLS" level="1"/>
+      <grant type="Archetype Feature" id="ID_ZIMO_NUMIDIUS_ARCHETYPE_FEATURE_PUPPETEER_STURDY_STRINGS"/>
+      <grant type="Archetype Feature" id="ID_ZIMO_NUMIDIUS_ARCHETYPE_FEATURE_PUPPETEER_MANUFACTURE_MARIONETTE" level="6"/>
+      <grant type="Archetype Feature" id="ID_ZIMO_NUMIDIUS_ARCHETYPE_FEATURE_PUPPETEER_MANIKINS_MADNESS" level="10"/>
+      <grant type="Archetype Feature" id="ID_ZIMO_NUMIDIUS_ARCHETYPE_FEATURE_PUPPETEER_NECROVENTRILOQUISM" level="10"/>
+      <grant type="Archetype Feature" id="ID_ZIMO_NUMIDIUS_ARCHETYPE_FEATURE_PUPPETEER_PUPPET_MASTERY" level="14"/>
+    </rules>
+  </element>
+
+  <element name="Expanded Spell List" type="Archetype Feature" source="Numidius" id="ID_ZIMO_NUMIDIUS_ARCHETYPE_FEATURE_PUPPETEER_EXPANDED_SPELL_LIST">
+    <supports>Warlock</supports>
+    <description>
+      <p>The Puppeteer lets your choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+      <h5>PUPPETEER EXPANDED SPELLS</h5>
+      <table>
+        <thead>
+          <tr><td>Spell Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>1st</td><td><em>Command, Compelled Duel</em></td></tr>
+        <tr><td>2nd</td><td><em>Detect Thoughts, Ventriloquism</em></td></tr>
+        <tr><td>3rd</td><td><em>Conjure Animals, Slow</em></td></tr>
+        <tr><td>4th</td><td><em>Conjure Minor Elementals, Dominate Beast</em></td></tr>
+        <tr><td>5th</td><td><em>Animate Objects, Geas</em></td></tr>
+      </table>
+    </description>
+    <sheet display="false">
+      <description>The Puppeteer lets your choose from an expanded list of spells when you learn a warlock spell.</description>
+    </sheet>
+    <spellcasting name="Warlock" extend="true">
+      <extend>ID_PHB_SPELL_COMMAND</extend>
+      <extend>ID_PHB_SPELL_COMPELLED_DUEL</extend>
+      <extend>ID_PHB_SPELL_DETECT_THOUGHTS</extend>
+      <extend>ID_ZIMO_NUMIDIUS_SPELL_VENTRILOQUISM</extend>
+      <extend>ID_PHB_SPELL_CONJURE_ANIMALS</extend>
+      <extend>ID_PHB_SPELL_SLOW</extend>
+      <extend>ID_PHB_SPELL_CONJURE_MINOR_ELEMENTALS</extend>
+      <extend>ID_PHB_SPELL_DOMINATE_BEAST</extend>
+      <extend>ID_PHB_SPELL_ANIMATE_OBJECTS</extend>
+      <extend>ID_PHB_SPELL_GEAS</extend>
+    </spellcasting>
+  </element>
+<!--
+######################################
+##											            ##	
+##										            	##	
+##				 ARCHTYPE FEATURES				##
+##										      	      ##
+##											            ##
+######################################
+-->
+  <element name="Puppet Master's Tools" type="Archetype Feature" source="Numidius" id="ID_ZIMO_NUMIDIUS_ARCHETYPE_FEATURE_PUPPETEER_PUPPET_MASTERS_TOOLS">
+    <description>
+      <p>At 1st Level, you acquire the knowledge to craft a puppet imbued with your Patron's eldritch influence. You gain proficiency with <em>Weaver's Tools</em>, and <em>Arcana</em>. These tools can also be used as an arcane focus.</p>
+      <p>Furthermore, when you craft clothing (PHB p187) the time it takes you is halved, and you can infuse magic into the clothing you create. As a bonus action, you can make a creature you can see within 40ft who is wearing these magical clothes to make a Strength saving throw against your Warlock spell save DC if it is unwilling.</p>
+      <p>On a failure, the creature must move up to 10ft in any direction of your choice or becomes restrained until the end of their next turn. You can use this feature a number of times equal to your Charisma modifier + your proficiency bonus, and you regain all expended uses of it when you finish a short rest.</p>
+    </description>
+    <sheet>
+      <description>You gain the sacred flame and light cantrips.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" name="ID_PROFICIENCY_SKILL_ARCANA"/>
+      <grant type="Proficiency" name="ID_PROFICIENCY_TOOL_PROFICIENCY_WEAVERS_TOOLS"/>
+    </rules>
+  </element>
+
+  <element name="Sturdy Strings" type="Archetype Feature" source="Numidius" id="ID_ZIMO_NUMIDIUS_ARCHETYPE_FEATURE_PUPPETEER_STURDY_STRINGS">
+    <description>
+      <p>Starting at 1st level, your patron will not let you escape their grasp by any means, even by death.</p>
+      <p>When you drop to 0 hit points, your unconscious body can still move up to half your movement speed, dragged across the floor by the neck. Due to your condition, you cannot make any action, bonus action, or reaction.</p>
+      <p>While in this state you are considered incapacitated and stay as such until you regain conciousness, you must still make death saves as normal, however, you do not provoke attacks of opportunity.</p>
+    </description>
+    <sheet>
+      <description>Your patron will not let you escape their grasp by any means, even by death. When you drop to 0 hit points, your unconscious body can still move up to half your movement speed. While in this state you are considered incapacitated and stay as such until you regain conciousness, you may not take any other action and must still make death saves.You do not provoke attacks of opportunity while in this state.</description>
+    </sheet>
+  </element>
+
+  <element name="Manufacture Marionette" type="Archetype Feature" source="Numidius" id="ID_ZIMO_NUMIDIUS_ARCHETYPE_FEATURE_PUPPETEER_MANUFACTURE_MARIONETTE">
+    <description>
+      <p>At 6th level, the puppeteer gives you the ability to seize control of the empty shells around you. If a beast or a humanoid of medium size or smaller dies within 10ft of you, you can use your reaction to puppeteer it, causing it to rise up immediately with 1 hit point. The creature uses the <em>Zombie</em> stat block (MM p316), replacing it's size with the creature's. In combat, the puppets's turn comes immediately after yours.</p>
+      <p>If the body is whole, with no obvious signs to thier cause of death, You can choose whether the puppet looks like the deceased, allowing you to attempt to pass them off as the original, and maintaining their creature type. Or if they look like an actual puppet, changing their creature type to construct.</p>
+      <p>The effect lasts 1 hour, until you or the puppet are incapacitated, or if you and it are not in the same plane. The puppet then collapse, falling back dead.</p>
+      <p>You can use this feature a number of times equal to half your Charisma modifier rounded up (minimum of 1), and you regain all expended uses of it when you finish a short rest.</p>
+    </description>
+    <sheet>
+      <description>the puppeteer gives you the ability to seize control of the empty shells around you. If a beast or a humanoid of medium size or smaller dies within 10ft of you, you can use your reaction to puppeteer it, causing it to rise up immediately with 1 hit point. The creature uses the <em>Zombie</em> stat block, replacing it's size with the creature's. In combat, the puppets's turn comes immediately after yours.</description>
+    </sheet>
+  </element>
+
+  <element name="Manikin's Madness" type="Archetype Feature" source="Numidius" id="ID_ZIMO_NUMIDIUS_ARCHETYPE_FEATURE_PUPPETEER_MANIKINS_MADNESS">
+    <description>
+      <p>When you reach 10th level, you become capable of inspiring fear through your puppets. When you use your Manufacture Marionette feature to create a puppet, you can contort it in such a way that anyone who sees it is horrified. Any creature who can see the puppet, and is within 30ft of it, must succeed on a Wisdom saving throw or be frightened.</p>
+      <p>A creature who failed its saving throw can try again at the end of each of it's turn to end it. A creature that succeeds on this saving throw is immune to this feature for 24 hours.</p>
+      <p>You can use this feature once for each puppet you create.</p>
+    </description>
+    <sheet>
+      <description>You are capable of inspiring fear through your puppets. When you use Manufacture Marionette to create a puppet, you can contort it in such a way that anyone who sees it is horrified. You can use this feature once for each puppet you create.</description>
+    </sheet>
+  </element>
+
+  <element name="Necroventriloquism" type="Archetype Feature" source="Numidius" id="ID_ZIMO_NUMIDIUS_ARCHETYPE_FEATURE_PUPPETEER_NECROVENTRILOQUISM">
+    <description>
+      <p>At 10th level, you gain further control of your puppets and can now relay messages using them. as a bonus action on your turn, you can force one puppet to say something of your choice in one of the languages it speaks, even if you don't speak said language. If a creature you turned into a puppet had telepathy, you cannot use it to communicate telepathically with others.</p>
+    </description>
+    <sheet>
+      <description>You can relay messages using them. as a bonus action on your turn, you can force one puppet to say something of your choice in one of the languages it speaks, even if you don't speak said language. If a creature you turned into a puppet had telepathy, you cannot use it to communicate telepathically with others.</description>
+    </sheet>
+  </element>
+
+  <element name="Puppet Mastery" type="Archetype Feature" source="Numidius" id="ID_ZIMO_NUMIDIUS_ARCHETYPE_FEATURE_PUPPETEER_PUPPET_MASTERY">
+    <description>
+      <p>At 14th level, you are able to make puppets so realistic that to the naked eye they would be indistinguishable from the real thing.</p>
+      <p>If a beast or humanoid of any size with CR lower than or equal to half your warlock level (rounded down) dies within 10ft of you, you can reanimate it as a reaction, with its own statblock and abilities. If the creature has a limit on how many times it can use a feature, and it was used before being puppeteered, that limit is not refreshed, furthermore, the puppet is brought back with a single hit point remaining, though it gains the <em>Undead Fortitude</em> feature from the <em>Zombie</em> statblock (MM p316). In combat, this master puppet's turn comes immediately after yours.</p>
+      <p>The master puppet has advantage on deception and performance checks to pass off as the original target, and you can use it to communicate telepathically with others if it had the ability prior to death.</p>
+      <p>The master puppet will collapse if it's hit points drop to 0, if you and it are in different planes, or if 24 hours have passed since you seized control of it. You can only have 1 master puppet at any time.</p>
+      <p>You can use this feature once, and cannot use it again until you complete a long rest.</p>
+    </description>
+    <sheet>
+      <description>At 14th level, you are able to make a master puppet so realistic that to the naked eye it would be indistinguishable from the real thing. The pupet retain its original statblock and abilities.</description>
+    </sheet>
+  </element>
+
+<!--
+########################################
+##											              ##	
+##										      	        ##	
+##				 ELDRICH INVOCATIONS				##
+##										      	        ##
+##											              ##
+########################################
+-->
+	<element name="Hidden Minion" type="Class Feature" source="Numidius" id="ID_ZIMO_NUMIDIUS_CLASS_FEATURE_ELDRITCH_INVOCATION_HIDDEN_MININON">
+		<supports>Eldritch Invocation</supports>
+		<description>
+			<p>You can cast <em>Unseen Servant</em> at will, without expending a spell slot or material components. You may only have one servant created this way at a time.</p>
+			<div class="reference">
+			s	<div element="ID_PHB_SPELL_UNSEEN_SERVANT" />
+			</div>
+		</description>
+		<sheet>
+			<description>You can cast <em>Unseen Servant</em> at will, without expending a spell slot or material components. You may only have one servant created this way at a time.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_UNSEEN_SERVANT" />
+		</rules>
+	</element>
+
+	<element name="Puppeteer's Grasp" type="Class Feature" source="Numidius" id="ID_ZIMO_NUMIDIUS_CLASS_FEATURE_ELDRITCH_INVOCATION_PUPPETEERS_GRASP">
+		<supports>Eldritch Invocation</supports>
+		<description>
+			<p>You can move inanimate objects as a bonus action up to 50ft, though for every 1lb the speed is decreased by 5 feet to a minimum of 0 feet. If the objects wights up to 25 lbs you can keep it suspended in place. Falling objects stop their fall and remain in place until your next turn or 1 minute when out of combat.</p>
+      <p>If a creature attempts to move an object you're keeping in place, you must succeed a Wisdom saving throw against their Athletics roll. On a failed save, the object is dropped.</p>
+		</description>
+		<sheet>
+			<description>You can move inanimate objects as a bonus action up to 50ft. The speed is reduced by 5 ft for every 1lb to a minimum of 0. If the objects wights up to 25 lbs you can keep it suspended in place. Falling objects stop their fall and remain in place until your next turn or 1 minute when out of combat.</description>
+		</sheet>
+	</element>
+
+	<element name="Threads of Motion" type="Class Feature" source="Numidius" id="ID_ZIMO_NUMIDIUS_CLASS_FEATURE_ELDRITCH_INVOCATION_THREADS_OF_MOTION">
+		<supports>Eldritch Invocation</supports>
+    <prerequisite>5th level</prerequisite>
+		<description>
+      <p><em>Prerequisite: 5th level</em></p>
+			<p>You gain the ability to manipulate anyone as if they were a puppet. As a bonus action on your turn, you can choose one creature you can see within 30 ft, which must make a Wisdom saving throw. On a failure, you can either force the creature to move up to half its speed in any direction, or reduce its speed to 0 until the end of its next turn.</p>
+      <p>You can use this feature a number of times equal to your Charisma modifier, and regain the ability to do so when you finish a short or long rest.</p>
+		</description>
+		<sheet>
+			<description>As a bonus action on your turn, you can choose one creature you can see within 30 ft, which must make a Wisdom saving throw. On a failure, you can force the creature to move up to half its speed in any direction, or reduce its speed to 0 until the end of its next turn.
+      You can use this feature a number of times equal to your Charisma modifier, and regain the ability to do so when you finish a short or long rest.</description>
+		</sheet>
+	</element>
+
+	<element name="Xenoananotimical Choreography" type="Class Feature" source="Numidius" id="ID_ZIMO_NUMIDIUS_CLASS_FEATURE_ELDRITCH_INVOCATION_XENOANANOTIMICAL_CHOREGRAPHU">
+		<supports>Eldritch Invocation</supports>
+    <prerequisite>9th level, the Puppeteer patron</prerequisite>
+		<description>
+      <p><em>9th level, the Puppeteer patron</em></p>
+			<p>You may choose one other creature type you are able to reanimate using your <em>Manufacture Marionette</em> feature, or your Puppet Mastery feature.</p>
+      <div class="reference">
+			  <div element="ID_ZIMO_NUMIDIUS_ARCHETYPE_FEATURE_PUPPETEER_MANUFACTURE_MARIONETTE" />
+			</div>
+		</description>
+		<sheet>
+			<description>You may choose one other creature type you are able to reanimate using your Manufacture Marionette feature, or your Puppet Mastery feature.</description>
+		</sheet>
+	</element>
+
+	<element name="Theatre of the Mind" type="Class Feature" source="Numidius" id="ID_ZIMO_NUMIDIUS_CLASS_FEATURE_ELDRITCH_INVOCATION_THEATRE_OF_THE_MIND">
+		<supports>Eldritch Invocation</supports>
+    <prerequisite>15th level</prerequisite>
+		<description>
+      <p><em>Prerequisite: 15th level</em></p>
+			<p>You can cast <em>seeming</em> once per long rest, without expending a spell slot.</p>
+			<div class="reference">
+			  <div element="ID_PHB_SPELL_SEEMING" />
+			</div>
+		</description>
+		<sheet>
+			<description>You can cast <em>seeming</em> once per long rest, without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SEEMING" />
+		</rules>
+	</element>
+
+<!--
+######################################
+##											            ##	
+##			DO NOT ADD ANYTHIG BELOW    ##
+##			        THIS PART       		##
+##											            ##
+######################################
+-->
+</elements>

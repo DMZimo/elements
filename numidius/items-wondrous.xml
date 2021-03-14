@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>Items-wondrous</name>
+    <description>Wondrous and Magical Items from the Numidius</description>
+    <author url="https://www.worldanvil.com/w/edora-zimo">Numidius</author>
+    <update version="0.0.1">
+      <file name="items-weapons.xml" url="" />
+    </update>
+  </info>
+
+<!--
+##########################
+##		BLAST BOX		##
+##########################
+-->
+  <element name="Blast Box" type="Magic Item" source="Numidius" id="ID_ZIMO_NUMIDIUS_MAGIC_ITEM_BLASR_BOX">
+		<description>
+			<p>This crystal cube contains a highly volatile substance that explodes on impact.</p>
+      <p>You can use an action to throw the cube up to 60 feet. The cube explodes on impact and is destroyed. Each creature within a 10 feet radius of where the cube landed must succeed on a DC 15 Dexterity saving throw. On a failed save, a creature takes 2d8 thunder damage and is pushed 10 feet away from the point of impact.</p>
+		</description>
+		<setters>
+			<set name="keywords">craftable</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+<!--
+##############################
+##		DIVIM EXTRACT		##
+##############################
+-->
+  <element name="Divim Extract" type="Magic Item" source="Numidius" id="ID_ZIMO_NUMIDIUS_MAGIC_ITEM_DIVIM_EXTRACT">
+		<description>
+			<p>A creature can use its action to drink this potion.</p>
+      <p>A creature that drinks this potion is cured of any disease. This potion has no effect on constract. If the creature is undead, this potion deals 1d10 points of radiant damage instead.</p>
+      <p class="indent"><b>Divine Residue.</b> If the creature is not a construct or undead, for the next 48 houes it has advantage on Constitution saving throws, any damage it deals with spells becomes <em><b>Radiant Damage</b></em></p>
+		</description>
+		<setters>
+			<set name="keywords">craftable</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">1000</set>
+			<set name="weight" lb="0.5">0.5 lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Very Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+<!--
+##################################
+##		FLASK OF THE HEARTH		##
+##################################
+-->
+	<element name="Flask of the Hearth" type="Magic Item" source="Numidius" id="ID_ZIMO_NUMIDIUS_MAGIC_ITEM_FLASK_OF_THE_HEARTH">
+		<description>
+			<p>This dull emerald flask is slightly warm to the touch. When placed in a campfire, hearth, or other similar source of flame it begins to slowly fill with vibrant orange liquid. After 1 hour the flask is filled completley.</p>
+				<p>It may be safely removed from the fire as it is never more than warm to touch.</p>
+			<p>Using an action, a creature may drink a portion of this liquid in order to regain a number of Hit Points depending of the cariety of the flask</p>
+			<p>Regarless of rarity, a flask may be filled once and have 5 charges, depleting after each use. When the flask is empty it loses its magical properties.</p>
+			<table>
+				<thead>
+					<tr><td>Flask of the</td><td>Rarity</td><td>Healing</td></tr>
+				</thead>
+					<tr><td>Hearh</td><td>Rare</td><td>4d4</td></tr>
+				<tr><td>Hearh</td><td>Very Rare</td><td>6d6</td></tr>
+				<tr><td>Hearh</td><td>Legendary</td><td>8d8</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="keywords">craftable</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp"></set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Varies</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+<!--
+##########################
+##		HOLY WATER		##
+##########################
+-->
+	<element name="Holy Water" type="Magic Item" source="Numidius" id="ID_ZIMO_NUMIDIUS_MAGIC_ITEM_HOLY_WATER">
+		<description>
+			<p>This flask is sealed with a runed ribbon on it's cork. A sermon is writen on the glass. The water inside are inconspicuous and gives no smell or taste.</p>
+			<p>An undead or fiend drinking the water take 2d6 Radiant Damage.</p>
+			<p>As an action a person can resite the verse and splash the content on a creature within 5 ft or hurl the container up to 20ft, smashing it on impact. If the target is Undead or a Fiend they take 4d6 Radiant Damage.</p>
+		</description>
+		<setters>
+			<set name="keywords">craftable</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="0.5">0.5 lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+<!--
+##############################
+##		LEYPHEMES STONE		##
+##############################
+-->
+	<element name="Leyphemes Stone" type="Magic Item" source="Numidius" id="ID_ZIMO_NUMIDIUS_MAGIC_ITEM_LEYPHREMES_STONE">
+		<description>
+			<p>A small stone pendant with three runes carved into it. An 'X' at the center sometimes glows in a very feint blue.</p>
+			<p><b>Phase.</b> This stone comes with 2 charges (max. 5), which it regains at dust. When you would suffer damage or any negative effect from a spell or attack, you may roll a d20. On a 19 or 20, the stone gains 1 charge up to a maximum of 5.</p>
+			<p>When you would suffer damage or any negative effect from a spell or attack, you can expend one charge and your reaction to remain completley unaffected as you momentarily phase out of reality.</p>
+			<p>You can only use this feature if you are aware that the spell or attack is about to affect you.</p>
+		</description>
+		<setters>
+			<set name="keywords">craftable</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">700</set>
+			<set name="weight" lb="0.5">0.5 lb.</set>
+			<set name="type">Amulet</set>
+			<set name="slot">neck</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement" addition="by a Wizard, Sorcerer, or Warlock">true</set>
+		</setters>
+	</element>
+<!--
+##################################
+##		RED-HOT WHETSTONE		##
+##################################
+-->
+	<element name="Red-Hot Whetstone" type="Magic Item" source="Numidius" id="ID_ZIMO_NUMIDIUS_MAGIC_ITEM_RED_HOT_WETHSTONE">
+		<description>
+			<p>A small slab of granite, fiery embers shine through its surface, yet it is only warm to the touch.</p>
+			<p>You may spend 15 minutes to sharpen your balde and it will do an additional 1d6 fire damage for the duration of the next battle.</p>
+			<p>The Red-Hot Whetstone has 20 charges and will lose 1 charge every time it is used. When all charges are depleted the stone loess its fiery propertis and remain as a simple chuck of granite</p>
+		</description>
+		<setters>
+			<set name="keywords">craftable</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">400</set>
+			<set name="weight" lb="0.5">0.5 lb.</set>
+			<set name="type">Trinket</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+<!--
+######################################
+##		STAFF OF THE APPRENTICE		##
+######################################
+-->
+	<element name="Staff of the Apprentice" type="Magic Item" source="Numidius" id="ID_ZIMO_NUMIDIUS_MAGIC_ITEM_STAFF_OF_THE_APRRENTICE">
+		<description>
+			<p>A personalized staff made by Wizards of the Conclave as a part of their graduation test.</p>
+			<p class="indent">Each stadd is specialised in a school of magic and contains two 1st level spells of that school.</p>
+			<table class="indent">
+				<thead>
+					<tr><td>1d8</td><td>School</td><td>Spells</td></tr>
+				</thead>
+					<tr><td>1</td><td>Abjuration</td><td>Sheild, Protection vs Good/Evil</td></tr>
+					<tr><td>2</td><td>Conjuration</td><td>Fog Cloud, Grease</td></tr>
+					<tr><td>3</td><td>Divination</td><td>Detect Magic, Comprehend Languages</td></tr>
+					<tr><td>4</td><td>Enchantment</td><td>Sleep, Charm Person</td></tr>
+					<tr><td>5</td><td>Evocation</td><td>Magic Missile, Burning Hands</td></tr>
+					<tr><td>6</td><td>Illusion</td><td>Silent Image, Color Spray</td></tr>
+					<tr><td>7</td><td>Necromancy</td><td>Ray of Sickness, Cause Fear</td></tr>
+					<tr><td>8</td><td>Transmutation</td><td>Feather Fall, Jump</td></tr>
+			</table>
+			<p>The staff has 5 charges. You can expend one charge to cast a spell. The stuff regains 1d4 charges at Dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">wizard</set>
+			<set name="category">Staffs</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="type">Staff</set>
+			<set name="attunement" addition="by a wizard">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="slot">onehand</set>
+			<set name="weapon">Quarterstaff</set>
+		</setters>
+	</element>
+<!--
+##################################
+##		TRUE HEART CLASP		##
+##################################
+-->
+	<element name="True Heart Clasp" type="Magic Item" source="Numidius" id="ID_ZIMO_NUMIDIUS_MAGIC_ITEM_TRUE_HEART_CLASP">
+		<description>
+			<p>A small clasp made from a heart shaped ruby with numorus small diamonds and three opals embedded into its golden rim. The clasp can be fastened to the user's ear, like a clip-on earing, allowing the wearer to intuitively better understand people true intentions.</p>
+			<p class="indent">While attuned to this item you gain advantage, and +2 to all insight checks.</p>
+		</description>
+		<rules>
+			<stat name="insight:misc" value="2" Bonus="base"/>
+			<stat name="insight:misc" value="" Bonus="base"/>
+		</rules>
+		<setters>
+			<set name="keywords">craftable</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">550</set>
+			<set name="weight" lb="0.01">0.01 lb.</set>
+			<set name="type">Trinket</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+			<set name="slot">misc</set>
+		</setters>
+	</element>
+<!--
+##############################
+##		VELSIR EXTRACT		##
+##############################
+-->
+	<element name="Velsir Extract" type="Magic Item" source="Numidius" id="ID_ZIMO_NUMIDIUS_MAGIC_ITEM_VELSIR_EXTRACT">
+		<description>
+			<p>This clear flask is decorated by a giant Fey Rose petal at the neck. The liquid inside glows in a bright shade of pink.</p>
+			<p>A creature who drinks the potion gains 4d4+4 temporary hit points and begins to shine in bright pink light through its skins, eyes and mouth. The effect persist as long as it still has Temporary Hit Points.</p>
+			<p>Using an action, a creature may drink a portion of this liquid in order to regain a number of Hit Points depending of the cariety of the flask</p>
+			<p class="indent"><b>Overflowing Vitality</b> When you cast a spell, you lose all Temporary Hit Points gained by the potion. If the spell is level 3 or lower and cause damage, the raw damage the spell would deal becomes healing instead.</p>
+		</description>
+		<setters>
+			<set name="keywords">craftable</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp"></set>
+			<set name="weight" lb="0.5">0.5 lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+<!--
+##############################
+##		WITCH'S RING		##
+##############################
+-->
+	<element name="Witch's Ring" type="Magic Item" source="Numidius" id="ID_ZIMO_NUMIDIUS_MAGIC_ITEM_WITCHS_RING">
+		<description>
+			<p>An iron ring shaped like 4 spider fangs holding a murky purple gem. A closer look reveals a shade of an animal inside.</p>
+			<p>The ring allows the wearer to trasform into a particular beast for up to 2 hours per day.</p>
+			<p>Upon aquiring the ring roll 1d8 to see what form the ring grants its wearer. While trasformed the user use the relevant stat block from the Monster Manual, while retaining his original Intelligence score.</p>
+			<p class="indent">Each night, you may roll again on the table or keep the current form. Warlocks and druids may choose a from from the list every time they transform.</p>
+			<table>
+			<thead>
+				<tr><td>1d8</td><td>Animal Form</td></tr>
+			</thead>
+				<tr><td>1</td><td>Cat</td></tr>
+				<tr><td>2</td><td>Frog</td></tr>
+				<tr><td>1</td><td>Bat</td></tr>
+				<tr><td>1</td><td>Owl</td></tr>
+				<tr><td>1</td><td>Rat</td></tr>
+				<tr><td>1</td><td>Raven</td></tr>
+				<tr><td>1</td><td>Spider</td></tr>
+				<tr><td>1</td><td>Goat</td></tr>
+			</table>	
+		</description>
+		<setters>
+			<set name="keywords">ring</set>
+			<set name="category">Rings</set>
+			<set name="cost" currency="gp">700</set>
+			<set name="slot">ring</set>
+			<set name="type">Ring</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement" addition="by a Wizard, Sorcerer, Warlock or druid">true</set>
+		</setters>
+	</element>
+<!--
+##############################
+##		MASK OF MEMORIES 	##
+##############################
+-->
+	<element name="Mask of Memories" type="Magic Item" source="Numidius" id="ID_ZIMO_NUMIDIUS_MAGIC_ITEM_MASK_OF_MEMORIES">
+		<description>
+			<p>Frequently abused in academic circles, these fragile masks endow the wearer with ability to form perfect memorie. It is considered contraband in most places.</p>
+			<p class="indent"><em><b>Intelligent Gaze.</b></em> Everyhing the wearer sees, hears, thinks and does while wearing the mask is permanently etched into their mind.</p>
+			<p class="indent"><em><b>All Seeing, Been Seen.</b></em> Anyone who can see or hear the wearer is similarly afflicted with permanent memories of the wearer's actions. These secondary users do not form perfect memories of anything that does not involve the individual wearing the mask.</p>
+		</description>
+		<setters>
+			<set name="keywords">mask</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">250gp</set>
+			<set name="weight" lb="0.5">0.5 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">true</set>
+			<set name="slot">head</set>
+			<set name="attunement" addition="by a Wizard, Sorcerer, Warlock or druid">true</set>
+		</setters>
+	</element>
+<!--
+##############################
+##		FLASK OF EPILEPSY 	##
+##############################
+-->
+	<element name="Flask of Epilepsy" type="Magic Item" source="Numidius" id="ID_ZIMO_NUMIDIUS_MAGIC_ITEM_FLASK_OF_EPILEPSY">
+		<description>
+			<p>This flask contain swirling lightnings magically encapsulated inside a vacuum crystal. When light passes trough the flask the lightnings flashes rapidly in many colors as they spins inside.</p>
+			<p class="indent"><em><b>Dazzling Lights.</b></em> The wielder holds the flask up an in front of a light source. All enemies in a 60 ft radius have to make a Constitution check with DC of 12 or become Disoriented for 1 minute. On a 1, the target is knocked Prone. Non organic and blind targets are immune.</p>
+			<p class="indent"><em><b>Thunder Bolt.</b></em> The wielder aims the head of the flask away from them, letting a thundering lightning shoots out of the flasks head, hitting every creature in a 5 by 30 feet line. Each creature in the area of the lightning must make a saving throw with DC of 15 and takes 2d6 lightning damage on a failed save, and half as much damage on a successful one. The flask can shoot up to 5 bolts per long rest.</p>
+			<p class="indent"><em><b>Thunder Fury.</b></em> If the flask breaks, whether by the wielder's intentions or not, it explode in a 60 feet radius, Every creature inside the explosion area must make a Dexterity saving trow of 15 DC and take 4d8 lightning damage on a failed save, and half as much damage on a successful one.</p>
+		</description>
+		<rules>
+			<stat name="insight:misc" value="2" Bonus="base"/>
+			<stat name="insight:misc" value="" Bonus="base"/>
+		</rules>
+		<setters>
+			<set name="keywords">craftable</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">550</set>
+			<set name="weight" lb="0.01">0.01 lb.</set>
+			<set name="type">Trinket</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+			<set name="slot">misc</set>
+		</setters>
+	</element>
+
+<!--
+##############################
+##		STING OF BINFING 	##
+##############################
+-->
+	<element name="Flask of Epilepsy" type="Magic Item" source="Numidius" id="ID_ZIMO_NUMIDIUS_MAGIC_ITEM_FLASK_OF_EPILEPSY">
+		<description>
+			<p>These golden strings, enchanted to fasten around those they're throw at, are used by many across Edora, from assasins to armies, they make a valuable tool in anyones arsenal.</p>
+			<p class="indent"><em><b>Entangle.</b></em> As an action, make an improvised ranged weapon attack (range 20/60). On a hit, the strings wrap tightly around the creature, causing it to become restrained.</p>
+			<p class="indent">A creature that was restrained by the string  can make a DC 15 Atlelthics or Acrobatics check At the end of each of its turns. On a success, the target escapes and is no longer restrained by the string. A string that was torn loses it magical properties, turning brown.</p>
+		</description>
+		<setters>
+			<set name="keywords">craftable</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+			<set name="slot">misc</set>
+		</setters>
+	</element>
+
+<!--
+######################################
+##		LEFT ARM OF A WARFORGED	 	##
+######################################
+-->
+	<element name="Left Arm of a Warforged" type="Magic Item" source="Numidius" id="ID_ZIMO_NUMIDIUS_MAGIC_ITEM_LEFT_ARM_OF_A_WARFORGED">
+		<description>
+			<p>Originally part of a prototype warforged that was taken apart, now serves as a prostetic. The arm is made out of metal and wood, and contains a few alterations by Ponder Stibbons and Illexius to better suite the needs of its new holder. Properly detaching the arm from the shoulder takes 1 minute while attaching it back takes 15 minutes. While free, the arm is sturdy eanough to be used for blocking, increasing your AC by 1.</p>
+			<p class="indent"><em><b>Lightning Powered.</b></em> The arm is powered by a Flask of Epilepsy, and has 4 charges. The arm requires 4 hours of rest in sunlight to recharge, it must not be attached during that time.</p>
+			<p>You gain the following benefits:</p>
+			<p class="indent"><em><b>Man of Steel.</b></em> Your Strenght Score increase by 2 up to a maximum of 20.</p>
+			<p class="indent"><em><b>Former Fighter.</b></em> With your left hand free, you gain advantage on all grapling checks done with your laft hand.</p>
+			<p class="indent"><em><b>Miniturized Siege Equipment.</b></em> You can store a dagger inside a spring loaded chamber built into the arm's wrist. As a bonus action, you may use 1 charge to lunch the weapon according to its <em><b>Thrown</b></em> properties. Alternativly, you may spend extra charges and add additional 20 feet per charge. You can reload the chamber by spending an action.</p>
+			<p class="indent"><em><b>Personal Vault</b></em> A small safe is built into the arm's bicep. Using an Action you can store any item that weight 0.5 lb or less inside the safe. You may retrive the item at any time using a Bonus Action. Containers of liquids that are kept in the vault can be admisitrated directly into your blood stream this way, giving you their full effect.</p>
+			<p class="indent"><em><b>Workshop Hazard.</b></em> Due to some mishaps during the initial aputaion You learned the spells <em><b>Shocking Grasp</b></em> and <em><b>Chilling Touch</b></em>. As a bonus action you can use 1 charge to cast the spells. Casting a spell this way does not consumes a spell slot.</p>		
+		</description>
+		<setters>
+			<set name="keywords">craftable</set>
+			<set name="category">Additional Feature</set>
+			<set name="cost" currency="gp">15,500</set>
+			<set name="weight" lb="15">15 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement" addition="by a humanoid that lost its left arm.">true</set>
+			<set name="rarity">Rare</set>
+			<set name="slot">misc</set>
+		</setters>
+		<rules>
+			<stat name="strength" value="2" />
+			<stat name="ac:misc" value="2" />
+		</rules>
+	</element>
+
+<!--
+##########################
+##		Nice Legs		##
+##########################
+-->
+    <element name="Nice Legs" type="Magic Item" source="Numidius" id="ID_WOUTER_NUMIDIUS_ADDITIONAL_FEATURE_EXTRA_LEGS">
+        <description>
+            <p>You're pedestrian, mundane legs have been replaced by a more healty pair. Your knees do not squeek anymore and you maximum HP increases by 1.</p>
+        </description>
+        <setters>
+            <set name="category">Additional Feature</set>
+            <set name="slot">gift</set>
+        </setters>
+        <rules>
+            <stat name="hp" value="1" />
+        </rules>
+    </element>
+</elements>
