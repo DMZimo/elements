@@ -44,7 +44,7 @@
 	</element>
 	<element name="Forced bonds." type="Racial Trait" source="Numidius" id="ID_ZIMO_NMDS_RACIAL_TRAIT_FORCED_TO_BOND">
 		<description>
-			<p>You know the <em>friends<em> cantrip. Charisma is your spell casting ability for this spell.</p>
+			<p>You know the <em>friends</em> cantrip. Charisma is your spell casting ability for this spell.</p>
 		</description>
 		<sheet>
 			<description>You know the friends cantrip.</description>
