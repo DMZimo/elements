@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Core</name>
+		<description>The content from the core rulebooks.</description>
+		<author url="http://dnd.wizards.com">Wizards of the Coast</author>
+		<update version="0.2.6">
+			<file name="numidius.index" url="https://raw.githubusercontent.com/DMZimo/elements/master/numidius.index" />
+		</update>
+	</info>
+	<files>
+		<file name="players-handbook.index" url="https://raw.githubusercontent.com/DMZimo/elements/master/numidius/numidius.index" />
+	</files>
+</index>
