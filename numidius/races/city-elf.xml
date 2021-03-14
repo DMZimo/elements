@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="city-elf.xml" url="https://raw.githubusercontent.com/DMZimo/elements/master/numidius/races/city-elf.xml" />
+		</update>
+	</info>
+	<element name="Pallid Elf" type="Sub Race" source="Numidius" id="ID_ZIMO_NMDS_SUB_RACE_CITY_ELF">
+		<supports>Elf</supports>
+		<description>
+			<p>City Elves are elves who have lived a large portion or even their whole lives in bustling cities or other centers of civilization. A wood elf might be able to tell which tree in the forest is the oldest, but a city elf can tell you which bars serve the best drink, which one of the cities beggars are part of the local thieves guild, and then disappear down an alley with your wallet, hat and trousers when you turn your head for one second to catch a breath.
+			
+			They are a lot more friendly and talkative than others of their kin, however this does not mean they are any less observant or calculating. Many have been disarmed by a city  elf's jovial demeanor and come out a few gold poorer as result.
+			
+			Years of living in the city means city elves are not as "pure" as other elves, something they take a great deal of pride in. It is not uncommon for a city elf to be less interested or invested in high elven societies or even outright consider them as relics of the past.
+			
+			City elves are a lot more varied than other elves with skin from pale to bronzed and hair that ranges from dirty blond, to jet black, depending on their lineage.</p>
+
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 1.</p>
+			<p class="indent"><strong><em>Street runner.</em></strong> You have advantage to Dexterity (Acrobatics) and Dexterity (Stealth) checks in urban areas.</p>
+			<p class="indent"><strong><em>Forced bonds.</em></strong> You know the <em>friends<em> cantrip. Charisma is your spell casting ability for this spell.</p>
+			<p class="indent"><strong><em>Part of the Scene.</em></strong> You can not get lost in a city unless under the influence of a magical or otherwise paranormal effect. You can more easily discern the location of local monuments or important buildings and the nature of the city's different areas.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="dexterity" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (City Elf)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_ZIMO_NMDS_RACIAL_TRAIT_CITY_STREET_RUNNER" />
+			<grant type="Racial Trait" id="ID_ZIMO_NMDS_RACIAL_TRAIT_FORCED_TO_BOND" />
+		</rules>
+	</element>
+
+	<element name="Street Runner" type="Racial Trait" source="Numidius" id="ID_ZIMO_NMDS_RACIAL_TRAIT_CITY_STREET_RUNNER">
+		<description>
+			<p>You have advantage to Dexterity (Acrobatics) and Dexterity (Stealth) checks in urban areas.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on Dexterity (Acrobatics) and Dexterity (Stealth) checks.</description>
+		</sheet>
+	</element>
+	<element name="Forced bonds." type="Racial Trait" source="Explorer’s Guide to Wildemount" id="ID_ZIMO_NMDS_RACIAL_TRAIT_FORCED_TO_BOND">
+		<description>
+			<p>You know the <em>friends<em> cantrip. Charisma is your spell casting ability for this spell.</p>
+		</description>
+		<sheet>
+			<description>You know the friends cantrip.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FRIENDS" />
+		</rules>
+	</element>
+	<element name="Part of the Scene." type="Racial Trait" source="Numidius" id="ID_ZIMO_NMDS_RACIAL_TRAIT_FORCED_TO_BOND">
+		<description>
+			<p>You can not get lost in a city unless under the influence of a magical or otherwise paranormal effect. You can more easily discern the location of local monuments or important buildings and the nature of the city's different areas.</p>
+		</description>
+		<sheet>
+			<description>You can not get lost in a city unless under a magical or paranormal effect.</description>
+		</sheet>
+	</element>
+</elements>
