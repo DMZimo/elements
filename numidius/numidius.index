@@ -1,21 +1,13 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<elements>
+<?xml version="1.0" encoding="utf-8"?>
+<index>
 	<info>
-		<update version="0.1.1">
-			<file name="sources.xml" url="https://raw.githubusercontent.com/DMZimo/elements/master/numidius/sources.xml" />
+		<name>Numidius</name>
+		<description>A World Building project. This is the complete collection of classes, races, backgrounds, spells, items and other assets used within the world.</description>
+		<author url="https://www.worldanvil.com/w/numidius-zimo">Zimo</author>
+		<update version="0.1.0">
+			<file name="numidius.index" url="https://raw.githubusercontent.com/DMZimo/elements/master/numidius/numidius.index" />
 		</update>
 	</info>
-	<element name="Numidius" type="Source" source="Core" id="ID_ZIMO_SOURCE_NUMIDIUS">
-		<description>
-			<![CDATA[<p>A World Building project. This is the complete collection of classes, races, backgrounds, spells, items and other assets used within the world.</p>]]>
-		</description>
-		<setters>
-			<set name="abbreviation">NMDS</set>
-			<set name="url">https://www.worldanvil.com/w/numidius-zimo</set>
-			<set name="author" abbreviation="ZIMO" url="https://www.worldanvil.com/w/numidius-zimo">Zimo</set>
-			<set name="release">20210314</set>
-		</setters>
-	</element>
 	<files>
 		<file name="warlock-puppeteer.xml" url="https://raw.githubusercontent.com/DMZimo/elements/master/numidius/companions.xml" />
 		<file name="warlock-puppeteer.xml" url="https://raw.githubusercontent.com/DMZimo/elements/master/numidius/feats.xml" />
@@ -27,4 +19,4 @@
 		<file name="warlock-puppeteer.xml" url="https://raw.githubusercontent.com/DMZimo/elements/master/numidius/items/items-wondrous.xml" />
 		<file name="warlock-puppeteer.xml" url="https://raw.githubusercontent.com/DMZimo/elements/master/numidius/races/city-elf.xml" />
 	</files>
-</elements>
+</index>

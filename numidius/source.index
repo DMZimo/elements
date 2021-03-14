@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.1.0">
+			<file name="source.xml" url="https://raw.githubusercontent.com/DMZimo/elements/master/numidius/source.xml" />
+		</update>
+	</info>
+	<element name="Numidius" type="Source" source="Core" id="ID_ZIMO_SOURCE_NUMIDIUS">
+		<description>
+			<![CDATA[<p><strong>A World Building project. This is the complete collection of classes, races, backgrounds, spells, items and other assets used within the world.</strong></p><p>more text More text more text More text more text More text more text More text more text More text more text More text more text More text!.</p><p>more text More text more text More text more text More text more text More text more text More text more text More text more text More text more text More text more text More text more text More text more text More text more text More text!</p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">NMDS</set>
+			<set name="url">https://www.worldanvil.com/w/numidius-zimo</set>
+			<set name="image">https://www.worldanvil.com/media/cache/cover/uploads/images/0a9ab10768a79c6b0b1f0c5aff48f1e0.png</set>
+			<set name="player guide">https://www.worldanvil.com/w/numidius-zimo/c/compendium-category</set>
+			<set name="author" abbreviation="ZIMO" url="https://www.worldanvil.com/author/Zimo">Zimo</set>
+			<set name="official">true</set>
+			<set name="core">true</set>
+			<set name="release">20210314</set>
+		</setters>
+	</element>
+</elements>
