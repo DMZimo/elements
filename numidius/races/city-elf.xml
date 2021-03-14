@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>City Elf</name>
-		<description>Subrace from the Numidius.</description>
+		<description>Sub-race from the Numidius.</description>
 		<author url="">Zimo</author>
 		<update version="0.0.1">
 			<file name="city-elf.xml" url="https://raw.githubusercontent.com/DMZimo/elements/master/numidius/races/city-elf.xml" />
@@ -12,7 +12,7 @@
 	<element name="City Elf" type="Sub Race" source="Numidius" id="ID_ZIMO_NMDS_SUB_RACE_CITY_ELF">
 		<supports>Elf</supports>
 		<description>
-			<p>City Elves are elves who have lived a large portion or even their whole lives in bustling cities or other centers of civilization. A wood elf might be able to tell which tree in the forest is the oldest, but a city elf can tell you which bars serve the best drink, which one of the cities beggars are part of the local thieves guild, and then disappear down an alley with your wallet, hat and trousers when you turn your head for one second to catch a breath.
+			<p>City Elves have lived a large portion and sometimes even their entire lives in centers of civilization. A wood elf might be able to tell which tree in the forest is the oldest, but a city elf can tell you which bars serve the best drink, which one of the cities beggars are part of the local thieves guild, and then disappear down an alley with your wallet, hat and trousers when you turn your head for one second to catch a breath.
 			
 			They are a lot more friendly and talkative than others of their kin, however this does not mean they are any less observant or calculating. Many have been disarmed by a city  elf's jovial demeanor and come out a few gold poorer as result.
 			
