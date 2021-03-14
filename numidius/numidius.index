@@ -17,7 +17,6 @@
 		<file name="items-armor.xml" url="https://raw.githubusercontent.com/DMZimo/elements/master/numidius/items/items-armor.xml" />
 		<file name="items-weapons.xml" url="https://raw.githubusercontent.com/DMZimo/elements/master/numidius/items/items-weapons.xml" />
 		<file name="items-wondrous.xml" url="https://raw.githubusercontent.com/DMZimo/elements/master/numidius/items/items-wondrous.xml" />
-
 		<file name="city-elf.xml" url="https://raw.githubusercontent.com/DMZimo/elements/master/numidius/races/city-elf.xml" />
 	</files>
 </index>
