@@ -17,12 +17,8 @@
 			<set name="abbreviation">NMDS</set>
 			<set name="url">https://www.worldanvil.com/w/numidius-zimo</set>
 			<set name="author" abbreviation="ZIMO" url="https://www.worldanvil.com/w/numidius-zimo">Zimo</set>
-			<set name="official">false</set>
-			<set name="supplement">true</set>
-			<set name="league">false</set>
 			<set name="release">20210314</set>
 		</setters>
 	</element>
 	<!-- Official Content -->
-	
 </elements>
