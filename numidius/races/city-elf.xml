@@ -22,7 +22,7 @@
 
 			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 1.</p>
 			<p class="indent"><strong><em>Street runner.</em></strong> You have advantage to Dexterity (Acrobatics) and Dexterity (Stealth) checks in urban areas.</p>
-			<p class="indent"><strong><em>Forced bonds.</em></strong> You know the <em>friends<em> cantrip. Charisma is your spell casting ability for this spell.</p>
+			<p class="indent"><strong><em>Forced bonds.</em></strong> You know the <em>friends</em> cantrip. Charisma is your spell casting ability for this spell.</p>
 			<p class="indent"><strong><em>Part of the Scene.</em></strong> You can not get lost in a city unless under the influence of a magical or otherwise paranormal effect. You can more easily discern the location of local monuments or important buildings and the nature of the city's different areas.</p>
 		</description>
 		<sheet display="false" />
