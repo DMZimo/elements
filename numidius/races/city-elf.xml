@@ -3,7 +3,7 @@
 	<info>
 		<name>City Elf</name>
 		<description>Subrace from the Numidius.</description>
-		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/sc-adventurers-guide">Zimo</author>
+		<author url="">Zimo</author>
 		<update version="0.0.1">
 			<file name="city-elf.xml" url="https://raw.githubusercontent.com/DMZimo/elements/master/numidius/races/city-elf.xml" />
 		</update>

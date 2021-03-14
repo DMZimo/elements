@@ -5,8 +5,8 @@
     <description>The Schemer from Numidius</description>
     <author url="https://www.worldanvil.com/w/edora-zimo">Numidius</author>
     <update version="0.0.5">
-      <file name="warlock-puppeteer.xml" url="" />
-    </update>
+			<file name="warlock-puppeteer.xml" url="https://raw.githubusercontent.com/DMZimo/elements/master/numidius/classes/warlock-puppeteer.xml" />
+		</update>
   </info>
 
   <element name="The Puppeteer" type="Archetype" source="Numidius" id="ID_ZIMO_NUMIDIUS_ARCHETYPE_PUPPETEER">
