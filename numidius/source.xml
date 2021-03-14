@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.2.1">
+		<update version="0.1.1">
 			<file name="sources.xml" url="https://raw.githubusercontent.com/DMZimo/elements/master/numidius/source.xml" />
 		</update>
 	</info>
@@ -9,7 +9,7 @@
 
 
 	<!-- Core -->
-	<element name="Numidius" type="Source" source="Core" id="ID_ZIMO_SOURCE_NUMIDIUS">
+	<element name="Numidius" type="Source" source="Numidius" id="ID_ZIMO_SOURCE_NUMIDIUS">
 		<description>
 			<![CDATA[<p>A World Building project. This is the complete collection of classes, races, backgrounds, spells, items and other assets used within the world.</p>]]>
 		</description>
