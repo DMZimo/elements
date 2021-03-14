@@ -38,7 +38,7 @@
 			<description>You have advantage on Dexterity (Acrobatics) and Dexterity (Stealth) checks.</description>
 		</sheet>
 	</element>
-	<element name="Forced bonds." type="Racial Trait" source="Explorer’s Guide to Wildemount" id="ID_ZIMO_NMDS_RACIAL_TRAIT_FORCED_TO_BOND">
+	<element name="Forced bonds." type="Racial Trait" source="Numidius" id="ID_ZIMO_NMDS_RACIAL_TRAIT_FORCED_TO_BOND">
 		<description>
 			<p>You know the <em>friends<em> cantrip. Charisma is your spell casting ability for this spell.</p>
 		</description>
