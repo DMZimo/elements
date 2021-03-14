@@ -5,10 +5,6 @@
 			<file name="sources.xml" url="https://raw.githubusercontent.com/DMZimo/elements/master/numidius/source.xml" />
 		</update>
 	</info>
-
-
-
-	<!-- Core -->
 	<element name="Numidius" type="Source" source="Numidius" id="ID_ZIMO_SOURCE_NUMIDIUS">
 		<description>
 			<![CDATA[<p>A World Building project. This is the complete collection of classes, races, backgrounds, spells, items and other assets used within the world.</p>]]>
