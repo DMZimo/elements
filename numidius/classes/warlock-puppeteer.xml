@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
   <info>
-    <name>The Schemer</name>
-    <description>The Schemer from Numidius</description>
+    <name>The Puppeteer</name>
+    <description>The Puppeteer from Numidius</description>
     <author url="https://www.worldanvil.com/w/edora-zimo">Numidius</author>
     <update version="0.0.5">
 			<file name="warlock-puppeteer.xml" url="https://raw.githubusercontent.com/DMZimo/elements/master/numidius/classes/warlock-puppeteer.xml" />
